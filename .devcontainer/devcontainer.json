@@ -1,12 +1,13 @@
 {
   "name": "Example-Playground",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": "."
   },
   "customizations": {
     "vscode": {
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python3",
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
         "editor.formatOnSave": true,
         "workbench.startupEditor": "readme",
         "remote.autoForwardPorts": false,
@@ -22,4 +23,3 @@
   "remoteUser": "vscode",
   "forwardPorts": []
 }
-
