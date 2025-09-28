@@ -1,6 +1,6 @@
 import json
 
-# Define JSON data as String
+# Define data as a dict
 data = {
     "name": "John",
     "age": 30,
@@ -8,7 +8,7 @@ data = {
     "hobbies": ["reading", "traveling", "cooking"]
 }
 
-# Pretty print JSON data
+# Pretty print JSON data as string with dumps
 pretty_json = json.dumps(data, indent=4)
 
 # Print pretty JSON
@@ -24,7 +24,7 @@ employee_string = '{"first_name": "Michael", "last_name": "Rodgers", "department
 # Check data type with type() method
 print(type(employee_string))
 
-# Convert string to object (with error handling)
+# Convert string to dict object with loads (with error handling)
 try:
     json_object = json.loads(employee_string)
     # Check new data type
