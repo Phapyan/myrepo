@@ -2,7 +2,7 @@
 # qualifies for a loan.
 
 MIN_SALARY = 30000.0  # The minimum annual salary
-MIN_YEARS = 2         # The minimum years on the job
+MIN_YEARS = 2  # The minimum years on the job
 
 # Get the customer's annual salary.
 salary = float(input('Enter your annual salary: '))
@@ -23,3 +23,27 @@ else:
     print(f'You must earn at least $'
           f'{MIN_SALARY:,.2f} '
           f'per year to qualify.')
+
+"""
+# Alternative 1 using elif
+# Determine whether the customer qualifies.
+if salary >= MIN_SALARY and years_on_job >= MIN_YEARS:
+    print('You qualify for the loan.')
+elif salary >= MIN_SALARY and years_on_job < MIN_YEARS:
+    print(f'You must have been employed '
+          f'for at least {MIN_YEARS} years to qualify.')
+else:
+    print(f'You must earn at least ${MIN_SALARY:,.2f} '
+          f'per year to qualify.')
+
+
+# Alternative 2 using elif
+if salary < MIN_SALARY:
+    print(f'You must earn at least ${MIN_SALARY:,.2f} '
+          f'per year to qualify.')
+elif years_on_job < MIN_YEARS:
+    print(f'You must have been employed for at least '
+          f'{MIN_YEARS} years to qualify.')
+else:
+    print('You qualify for the loan.')
+"""
