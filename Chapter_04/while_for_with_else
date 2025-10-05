@@ -1,0 +1,25 @@
+# Using while and for with else
+# The else block after a while (or for) loop executes only
+# if the loop completes normally — that is, it didn’t exit via a break statement.
+
+# while loop
+numbers = [2, 4, 6, 8, 10]
+target = 6
+i = 0
+
+while i < len(numbers):
+    if numbers[i] == target:
+        print("Found the number!")
+        break
+    i += 1
+else:
+    print("Number not found!")
+
+
+# for loop
+for num in numbers:
+    if num == target:
+        print("Found the number!")
+        break
+else:
+    print("Number not found.")
