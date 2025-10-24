@@ -1,5 +1,5 @@
 import os
-# This program writes three lines of data
+# This program writes four lines of data
 # to a file.
 
 
@@ -9,8 +9,8 @@ def main():
 
     # Alternative
     # Build the correct file path for any OS
-    out = os.path.join('Chapter_06', 'philosophers.txt')
-    outfile = open(out, 'w')
+    filepath = os.path.join('Chapter_06', 'philosophers.txt')
+    outfile = open(filepath, 'w')
 
     # Write the names of three philosphers
     # to the file.
