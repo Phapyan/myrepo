@@ -4,7 +4,7 @@
 
 def main():
     # Open a file for writing.
-    outfile = open('numbers.txt', 'w')
+    outfile = open('Chapter_06/numbers.txt', 'w')
 
     # Get three numbers from the user.
     num1 = int(input('Enter a number: '))
@@ -19,6 +19,7 @@ def main():
     # Close the file.
     outfile.close()
     print('Data written to numbers.txt')
+
 
 # Call the main function.
 if __name__ == '__main__':

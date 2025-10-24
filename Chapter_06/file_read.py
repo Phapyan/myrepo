@@ -2,7 +2,7 @@
 # of the philosophers.txt file.
 def main():
     # Open a file named philosophers.txt.
-    infile = open('philosophers.txt', 'r')
+    infile = open('Chapter_06/philosophers.txt', 'r')
 
     # Read the file's contents.
     file_contents = infile.read()
@@ -13,6 +13,7 @@ def main():
     # Print the data that was read into
     # memory.
     print(file_contents)
+
 
 # Call the main function.
 if __name__ == '__main__':

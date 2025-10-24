@@ -4,10 +4,10 @@
 def main():
     # Initialize an accumulator.
     total = 0.0
-    
+
     try:
         # Open the sales_data.txt file.
-        with open('sales_data.txt', 'r') as infile:
+        with open('Chapter_06/sales_data.txt', 'r') as infile:
             # Read the values from the file and accumulate them.
             for line in infile:
                 amount = float(line)
@@ -15,7 +15,7 @@ def main():
 
         # Print the total.
         print(f'{total:,.2f}')
-        
+
     except FileNotFoundError:
         print('An error occured trying to read the file.')
 
@@ -24,6 +24,7 @@ def main():
 
     except:
         print('An error occured.')
+
 
 # Call the main function.
 if __name__ == '__main__':

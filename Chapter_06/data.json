@@ -17,6 +17,18 @@
             "name": "Charlie",
             "email": "charlie@example.com",
             "active": true
+        },
+        {
+            "id": 4,
+            "name": "Rainer",
+            "email": "rainer@example.com",
+            "active": true
+        },
+        {
+            "id": 4,
+            "name": "Rainer",
+            "email": "rainer@example.com",
+            "active": true
         }
     ]
 }
